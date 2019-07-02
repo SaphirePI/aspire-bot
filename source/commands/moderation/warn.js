@@ -39,7 +39,7 @@ ${WarnMessage}
  message.channel.send(embed)
 
  member.send(`Вы получили предупреждение на сервере ${message.guild.name}.`, {embed: embed});
- sql = `INSERT INTO warns (id, user, userid, reason, moderator, guild) VALUES ('${id}', '${member.user.username}', '${member.id}', '${WarnMessage}', '${message.author.id}', '${message.guild.id}')`;
+ sql = `INSERT INTO warns (id, userid, reason, moderator, guild) VALUES ('${id}', '${member.id}', '${WarnMessage}', '${message.author.id}', '${message.guild.id}')`;
  con.query(sql);
     }
 }

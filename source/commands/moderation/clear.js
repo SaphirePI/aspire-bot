@@ -9,8 +9,8 @@ module.exports = {
         if (!client.isPermission()) return message.error('Недостаточно прав', 4, false);
         const user = message.mentions.users.first();
         const amount = !!parseInt(message.content.split(' ')[1]) ? parseInt(message.content.split(' ')[1]) : parseInt(message.content.split(' ')[2])
-        if (!amount) return message.error("Не указаны аргументы", 2);
-        if (!amount && !user) return message.error("Не указаны аргументы", 2);
+        if (!amount) return message.error("Не указаны аргументы", 2, false);
+        if (!amount && !user) return message.error("Не указаны аргументы", 2, false);
         message.channel.fetchMessages({
             limit: amount,
         }).then((messages) => {
