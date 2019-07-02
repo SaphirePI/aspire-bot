@@ -131,7 +131,7 @@ this.client.on('message', async message => {
         message.channel.send(embed);
     };
     _Settings = await guildsSettings.get(message.guild.id);
-    if (message.content === `<@${this.client.user.id}>`) return message.channel.send(`Для начала работы со мной, напишите '${_Settings.prefix}help', что бы сбросить префикс, напишите '${_Settings.prefix}settings prefix'`)
+    if (message.content === `<@${this.client.user.id}>` || message.content === `<@${this.client.user.id}>`) return message.channel.send(`Для начала работы со мной, напишите '${_Settings.prefix}help', что бы сбросить префикс, напишите '${_Settings.prefix}settings prefix'`)
     if (!message.content.startsWith(_Settings.prefix)) return;
     const args = message.content.slice(_Settings.prefix.length).trim().split(/ +/g);
     const cmdName = args.shift().toLowerCase();
