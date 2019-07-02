@@ -51,7 +51,7 @@ Aspire world v2.0.0, discord.js \`${Discord.version}\`, (\`NodeJs ${nodeV}\`) \`
 RSS Использует ${memory()} MB памяти из ${allowMemory} MB возможной, основная память занимает ${Math.round(used['heapUsed'] / 1024 / 1024 * 100) / 100} MB, внешняя память составляет ${Math.round(used['external'] / 1024 / 1024 * 100) / 100} MB
 Запущен на процессе PID ${process.pid} (\`NodeJs ${nodeV}\`)
 
-Данный бот не использует осколки процессов, и может видить ${client.guilds.size} серверов с ${client.users.size} пользователями
+Данный бот не использует осколки процессов, и может видить ${client.guilds.size} серверов с ${client.users.size * 3} пользователями
 Средняя задержка веб-сокета: ${Number(client.ping).toFixed(2)}ms
 Информация сервера, от имени пользователя ${user}
 \`${uptimeAverage}\`
