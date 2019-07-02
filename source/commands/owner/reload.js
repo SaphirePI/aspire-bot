@@ -18,14 +18,14 @@ module.exports = {
                 client.commands.delete(name);
                 const props = require(`${path}.js`);
                 client.commands.set(name, props);
-                message.channel.send(`\`${path}.js\` здох..`);
+                message.channel.send(`\`${path}.js\` перезагружен..`);
             } catch (error) {
                 message.channel.send("\`" + error + "\`")
             }
         } else if (a === "file") {
             try {
                 delete require.cache[require.resolve(`${path}`)]
-                message.channel.send("dasdasdas")
+                message.channel.send("Файл перезагружен")
             } catch (error) {
                 message.channel.send("\`" + error + "\`")
             }
