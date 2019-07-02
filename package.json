@@ -1,0 +1,28 @@
+{
+  "name": "hweek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aspire.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^5.4.0",
+    "discord.js": "^11.5.1",
+    "dominant-color": "0.0.1",
+    "enmap": "^5.0.0",
+    "executive": "^1.6.3",
+    "graceful-fs": "^4.2.0",
+    "img-color": "^1.0.2",
+    "jimp": "^0.6.4",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.6.0",
+    "order-id": "^1.1.0",
+    "request": "^2.88.0",
+    "string-similarity": "^3.0.0",
+    "weeb-wrapper": "^1.3.2"
+  }
+}
