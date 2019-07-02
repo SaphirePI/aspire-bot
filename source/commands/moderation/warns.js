@@ -23,7 +23,6 @@ ${warn.reason}
 \`\`\`
 `
             })
-
             let embed = new Discord.RichEmbed()
             .setAuthor(user.username, user.displayAvatarURL)
             .setDescription(form)
